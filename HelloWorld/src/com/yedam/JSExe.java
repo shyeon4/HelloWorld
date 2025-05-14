@@ -2,6 +2,11 @@ package com.yedam;
 
 public class JSExe {
 	public static void main(String[] args) {
+
+		변경된 내용
+
+		ㅁㄴㄹㄴㅇㄹㅇㄴㄻㄴㅇㄹㄴㅇㅁㄹ
+		
 		// 1 ~ 100 사이의 임의의 값 생성
 		int sum = 0;
 		for (int i = 1; i <= 5; i++) {
