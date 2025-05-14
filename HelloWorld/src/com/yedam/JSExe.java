@@ -11,7 +11,7 @@ public class JSExe {
 		for (int i = 1; i <= 5; i++) {
 			int result = (int) (Math.random() * 10) + 1; // 1<= x < 11
 			sum += result;
-		}
+		} 
 		System.out.println("결과 : " + sum);
 	}
 
