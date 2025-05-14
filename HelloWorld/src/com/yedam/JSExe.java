@@ -5,6 +5,7 @@ public class JSExe {
 		// 1 ~ 10 사이의 임의의 값 생성
 		test2();
 	} // end of main
+
 	public static void test2() {
 		int sum = 0;
 		for (int i = 1; i <= 5; i++) {
