@@ -8,4 +8,5 @@ public class HelloWorld {
 			System.out.println("Hello, World");
 	}
 }
-// public static void 그냥 이런 게 있다 생각하고 넘어가고.. 
+// public static void 그냥 이런 게 있다 생각하고 넘어가고..
+// 대문자로 시작하는 건 클래스 ex) HelloWrold, string, System
