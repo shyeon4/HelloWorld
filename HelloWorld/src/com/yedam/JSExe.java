@@ -5,6 +5,9 @@ public class JSExe {
 		// 1 ~ 10 사이의 임의의 값 생성
 		// 변경...
 		test2();
+
+
+		// 충동작성.
 	} // end of main
 
 	public static void test2() {
