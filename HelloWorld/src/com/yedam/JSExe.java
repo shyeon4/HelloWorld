@@ -28,12 +28,31 @@ public class JSExe {
 //
 //		test3();
 
-		test4();
+//		test4();
+		
+		test5();
 	} // end of main
 
+	public static void test5() {
+		// printf("형식 문자열", 값1, 값2.....)
+//		System.out.printf("%s %n\n", "문자", 30);
+//		System.out.printf("%s %.1f\n", "테스트", 30.3);
+		// In을 넣어야 엔터 쳐진 걸로 나옴, \n도 마찬가지 (112~113P)
+		System.out.printf("%s %d %1f\n", "홍길동", 100, 23.9);
+		System.out.printf("%s\n", "안녕하세요 이름은 조상현입니다");
+		System.out.printf("%s %d%s\n", "나이는", 33, "세 입니다");
+		System.out.printf("%s %.1f%s", "몸무게는", 72.5, "입니다" );
+	} 
+	// 다른 예시
+//	String formatStr = "안녕하세요 %s입니다 \n";
+//	formatStr += "나이는 %d세입니다 \n";
+//	formatStr += "몸무게는 %.1f입니다 \n";
+//	System.out.printf(formatStr, "이창호", 20, 67.8);
+	
 	public static void test4() {
 		Scanner scn = new Scanner(System.in);
 		String str = "친구 목록은 ";
+		boolean isFirst = true;
 		while (true) {
 			System.out.println("친구 이름 입력 종료할려면 quit>>");
 			String msg = scn.nextLine();
@@ -42,7 +61,12 @@ public class JSExe {
 				break;
 			}
 			System.out.println("입력한 값은" + msg);
-			str += msg + ", ";
+			if (isFirst) {
+				str += msg;
+				isFirst = false;
+			} else {
+				str += ", " + msg;
+			}
 		}
 		System.out.println(str);
 		// System.out.println("end of prog.");
