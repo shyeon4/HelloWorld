@@ -3,24 +3,7 @@ package com.yedam.condition;
 import java.util.Scanner;
 
 public class IfExe {
-	public static void main(String[] args) {
-	    	int answer = (int) (Math.random()*100) +1;
-	        int input = 0;
-	        Scanner sc = new Scanner(System.in);
-	        System.out.print("1과 100 사이의 정수를 입력하세요.");
-	        System.out.println(" (정답 : " + answer + ")"); //정답 미리 알고 싶을 때 사용
-	        do {
-	        	input = sc.nextInt(); //최초로 한 번 실행
-	            if (input > answer) {
-	            	System.out.println("더 작은 수로 입력하세요.");
-	            } else if (input < answer) {
-	            	System.out.println("더 큰 수로 입력하세요.");
-	            }
-			} while (input != answer);
-	        	System.out.println("정답입니다.");
-	            sc.close();
-		}
-	}
+
 }
 
 		
