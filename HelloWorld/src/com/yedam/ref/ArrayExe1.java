@@ -1,46 +1,68 @@
 package com.yedam.ref;
 
+import java.util.Scanner;
+
 public class ArrayExe1 {
 	
 	public static void main(String[] args) {
-		// Math.random 활용해서 10점부터 100점 사이의 점수를 생성ㅇ
-		// 위에서 생성한 학생 10명의 점수와 함께 평균과 최고 점수ㅇ 구하기
-		// scoreAry 변수명
+		boolean run = true;
+		int studentNum = 0;
+		int[] scores = null;
+		Scanner scanner = new Scanner(System.in);
 		
-		int[] scoreAry = new int[10];
-		int sum = 0;
-		int max = 0;
-		double avg = 0;
+		while(run) {
+			System.out.println("------------------------------------------");
+			System.out.println("1.학생 수 2.점수 입력 3.점수 리스트 4.분석 5.종료");
+			System.out.println("------------------------------------------");
+			System.out.print("선택하세요");
 		
-		for(int i = 0; i < 10; i++) {
-			scoreAry[i] = (int)(Math.random() * 91) + 10;
-			System.out.printf("학생들 점수는 %d\n", scoreAry[i]);
-			sum += scoreAry[i];
-			if(max < scoreAry[i]) {
-				max = scoreAry[i];
-			}
-			
-		}
-		avg = 1.0 * sum / 10;
-		System.out.printf("평균은 %.1f, 최고 점수는 %d", avg, max );
-		// f가 소수점 있는 거고 s가 문자? d=정수
-	}
+		int selectNo = Integer.parseInt(scanner.nextLine());
 		
+		if(selectNo == 1) {
+			System.out.println(studentNum = 3);
+		} else if(selectNo == 2) {
+			// 작성 위치
+		} else if(selectNo == 3) {
+			// 작성 위치
+		} else if(selectNo == 4) {
+			// 작성 위치
+		} else if(selectNo == 5) {
+			run = false;
+		} // while
 		
-		
-		
-		
-		
-		
-		
-		
-//		
-		
+	System.out.println("프로그램 종료");
+	
+	} // main
 
-//		
-		
+	
+} // class
 
+
+	
+//		// Math.random 활용해서 10점부터 100점 사이의 점수를 생성
+//		// 위에서 생성한 학생 10명의 점수와 함께 평균과 최고 점수ㅇ 구하기
+//		// scoreAry 변수명
+//		
+//		int[] scoreAry = new int[10];
+//		int sum = 0;
+//		int max = 0;
+//		double avg = 0;
+//		
+//		for(int i = 0; i < 10; i++) {
+//			scoreAry[i] = (int)(Math.random() * 91) + 10;
+//			System.out.printf("학생들 점수는 %d\n", scoreAry[i]);
+//			sum += scoreAry[i];
+//			if(max < scoreAry[i]) {
+//				max = scoreAry[i];
+//			}
+//			
+//		}
+//		avg = 1.0 * sum / 10;
+//		System.out.printf("평균은 %.1f, 최고 점수는 %d", avg, max );
+//		// f가 소수점 있는 거고 s가 문자? d=정수
+	
 		
+	
 	
 	public static void test2() {
 		// int 배열 (intAry) : 10, 17, 22, 31, 55, 24
@@ -95,11 +117,6 @@ public class ArrayExe1 {
 	} // end of main
 
 
-
-	
-	
-	
-	
 	
 	// 집에서 다시 해보기 (별 만들기)
 //	public static void test() {
