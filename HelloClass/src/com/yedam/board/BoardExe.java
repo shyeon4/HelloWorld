@@ -9,7 +9,7 @@ public class BoardExe {
 	// 필드
 	private Board[] boards; // 데이터 저장
 	private Scanner scn = new Scanner(System.in);
-	private int bno = 0;
+	private int bno = 2; // 배열 인덱스 (밑에 boards에서 0, 1 사용함)
 	
 	// 생성자
 	public BoardExe() {
