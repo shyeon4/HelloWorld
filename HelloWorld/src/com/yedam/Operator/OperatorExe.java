@@ -3,7 +3,7 @@ package com.yedam.Operator;
 public class OperatorExe {
 
 	public static void main(String[] args) {
-		test5();
+		test4();
 	}
 	
 	public static void test5() {
